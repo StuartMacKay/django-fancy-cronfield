@@ -16,30 +16,33 @@ CLASSIFIERS = [
     'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     'Topic :: Software Development',
     'Topic :: Software Development :: Libraries :: Application Frameworks',
-    'Programming Language :: Python :: 2.6',
-    'Programming Language :: Python :: 2.7',
-    'Programming Language :: Python :: 3.3',
-    'Programming Language :: Python :: 3.4',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
     'Framework :: Django',
-    'Framework :: Django :: 1.5',
-    'Framework :: Django :: 1.6',
-    'Framework :: Django :: 1.7',
-    'Framework :: Django :: 1.8',
-    'Framework :: Django :: 1.9',
+    'Framework :: Django :: 1.11',
+    'Framework :: Django :: 2.0',
+    'Framework :: Django :: 2.1',
+    'Framework :: Django :: 2.2',
 ]
 
 INSTALL_REQUIREMENTS = [
-    'django>=1.5,<2.0',
-    'python-crontab==1.9.3',
+    'django>=1.11,<3.0',
+    'python-crontab==1.9.5',
 ]
 
 readme_path = os.path.join(os.path.dirname(__file__), 'README.rst')
 long_description = open(readme_path).read()
 
 setup(
-    name="django-fancy-cronfield",
+    name="django-fancy-cronfield-alt",
     author="Saeed Salehian",
     author_email="saeed.sq@gmail.com",
+    maintainer='Ryan Siemens',
+    maintainer_email='ryanjsiemens@gmail.com',
     version=fancy_cronfield.__version__,
     description="A nice and customizable cronfield",
     long_description=long_description,

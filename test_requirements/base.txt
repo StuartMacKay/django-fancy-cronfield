@@ -1,6 +1,6 @@
-python-crontab==1.9.3
+python-crontab==1.9.5
 pep8
 unittest2
-coverage==4.0.2
+coverage>=4.0.2
 codecov
 codacy-coverage
