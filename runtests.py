@@ -6,8 +6,6 @@ import sys
 import django
 from django.conf import settings
 
-from fancy_cronfield.utils.compat import DJANGO_1_5, DJANGO_1_6
-
 
 def main(*test_args):
     if not test_args:
@@ -16,8 +14,7 @@ def main(*test_args):
     os.environ['DJANGO_SETTINGS_MODULE'] = 'fancy_cronfield.tests.settings'
     from django.test.utils import get_runner
 
-    if not (DJANGO_1_5 or DJANGO_1_6):
-        django.setup()
+    django.setup()
 
     test_runner_class = get_runner(settings)
     test_runner = test_runner_class()

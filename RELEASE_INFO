@@ -1,3 +1,4 @@
+- Drop support for Django < 1.11 and increase support up to 2.2
 - Put cola in fridge for cooling (see last step)
 - Create a release branch (locally)
 - Bump the version in fancy_cronfield/__init__.py
