@@ -46,7 +46,7 @@ setup(
     version=fancy_cronfield.__version__,
     description="A nice and customizable cronfield",
     long_description=long_description,
-    url='https://github.com/saeedsq/django-fancy-cronfield',
+    url='https://github.com/rsiemens/django-fancy-cronfield',
     license='BSD License',
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
